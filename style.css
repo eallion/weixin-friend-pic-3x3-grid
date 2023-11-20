@@ -1,0 +1,46 @@
+body {
+    background-color: #fff;
+    max-width: 800px;
+}
+div {
+    padding: 1rem 0;
+    border-bottom: solid 1px #000;
+}
+
+div:last-of-type {
+    border-bottom: none;
+}
+
+.toot-images {
+    display: grid;
+    gap: 10px;
+}
+
+.toot-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    transition: transform .3s ease;
+    cursor: zoom-in;
+    margin: 0;
+    padding: 0;
+}
+
+.grid-1 {
+    grid-template-columns: 150px;
+}
+
+.grid-3 ,
+.grid-5,
+.grid-6 ,
+.grid-7 ,
+.grid-8 ,
+.grid-9 {
+    grid-template-columns: repeat(3, 150px);
+}
+
+.grid-2,
+.grid-4 {
+    grid-template-columns: repeat(2, 150px);
+}
