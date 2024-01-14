@@ -1,0 +1,39 @@
+/* base */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-left: 1rem;
+}
+
+.images {
+    margin: 1rem 0 0;
+}
+
+.images:last-child {
+    margin-bottom: 2rem;
+}
+
+p {
+    margin: 3rem 0 0 0.5rem;
+    border-left: 10px #333 solid;
+    padding-left: 0.5rem;
+}
+
+@media (max-width: 540px) {
+    .container {
+        max-width: 540px;
+    }
+}
+/* base end */

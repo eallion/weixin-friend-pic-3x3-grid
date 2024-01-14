@@ -1,22 +1,9 @@
-body {
-    background-color: #fff;
-    max-width: 800px;
-}
-div {
-    padding: 1rem 0;
-    border-bottom: solid 1px #000;
-}
-
-div:last-of-type {
-    border-bottom: none;
-}
-
-.toot-images {
+.images {
     display: grid;
     gap: 10px;
 }
 
-.toot-images img {
+.images img {
     width: 150px;
     height: 150px;
     object-fit: cover;
@@ -43,4 +30,23 @@ div:last-of-type {
 .grid-2,
 .grid-4 {
     grid-template-columns: repeat(2, 150px);
+}
+
+@media (max-width: 540px) {
+    .grid-3 ,
+    .grid-5,
+    .grid-6 ,
+    .grid-7 ,
+    .grid-8 ,
+    .grid-9 {
+        grid-template-columns: repeat(3, 96px);
+    }
+    .grid-2,
+    .grid-4 {
+        grid-template-columns: repeat(2, 96px);
+    }
+    .images img {
+        width: 96px;
+        height: 96px;
+    }
 }
